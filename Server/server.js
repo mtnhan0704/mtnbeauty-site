@@ -10,6 +10,7 @@ import orderRouter from "./Routes/OrderRoutes.js";
 import productRouter from "./Routes/ProductRoutes.js";
 import uploadRouter from "./Routes/UploadRoutes.js";
 import userRouter from "./Routes/UserRoutes.js";
+//import forgotPasswordRouter from "./Routes/auth.js";
 
 dotenv.config();
 connectDatabase();
@@ -29,6 +30,7 @@ app.use("/api/products", productRouter);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
 app.use("/api/upload", uploadRouter);
+//app.use("/api/forgot-password", forgotPasswordRouter);
 app.get("/api/config/paypal", (req, res) => {
     res.send(process.env.PAYPAL_CLIENT_ID);
 });

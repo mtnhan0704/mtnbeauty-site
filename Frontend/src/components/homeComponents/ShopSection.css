@@ -1,0 +1,19 @@
+.gradient {
+  background: linear-gradient(
+    86.88deg,
+    #7d6aff 1.38%,
+    #ffb86c 64.35%,
+    #fc2872 119.91%
+  ) !important;
+  border-radius: 0.25rem !important;
+}
+
+
+.btn-info {
+  margin-top: 5px;
+  background-color: #00dbfd;
+}
+
+.btn-info:hover {
+  background-color: #15ff7e;
+}
